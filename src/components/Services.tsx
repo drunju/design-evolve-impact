@@ -44,12 +44,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageUrl,
         )}>
           {description}
         </p>
-        <button className={cn(
-          "mt-4 self-start py-2 px-4 rounded-md bg-teal text-white font-medium transition-all",
-          isHovered ? "opacity-100" : "opacity-0"
-        )}>
-          Learn More
-        </button>
       </div>
     </div>
   );
@@ -61,6 +55,16 @@ const Services = () => {
       title: "Human-Centered Design",
       description: "Using collaborative methodologies to create solutions that truly meet human needs. Our HCD approach has been applied to hundreds of projects across East Africa with measurable impact.",
       imageUrl: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      title: "User Experience Design (UED)",
+      description: "Creating intuitive, enjoyable, and accessible digital experiences that put users at the center. We combine aesthetics with functionality to design interfaces that delight and perform.",
+      imageUrl: "https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=2080&auto=format&fit=crop"
+    },
+    {
+      title: "UX Research",
+      description: "Gathering deep insights about user behaviors, needs, and motivations through methodical research and testing. Our research informs design decisions that create meaningful solutions.",
+      imageUrl: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=2070&auto=format&fit=crop"
     },
     {
       title: "Executive Coaching",
@@ -87,7 +91,7 @@ const Services = () => {
           Comprehensive solutions for individuals and organizations seeking transformation through human-centered approaches.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <ServiceCard 
               key={index}

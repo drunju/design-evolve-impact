@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Instagram, Linkedin, Twitter, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,6 +35,15 @@ const Navigation = () => {
     document.body.style.overflow = 'auto';
   };
 
+  const navItems = [
+    { name: 'About', href: '/#about' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Speaking & Workshops', href: '/#speaking-workshops' },
+    { name: 'Coaching', href: '/#coaching' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/#contact' }
+  ];
+
   return (
     <header
       className={cn(
@@ -42,25 +52,25 @@ const Navigation = () => {
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold">
+        <Link to="/" className="text-2xl font-bold">
           <span className={cn('transition-colors duration-300', isScrolled ? 'text-charcoal' : 'text-white')}>
             Emmanuel Nandokha
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-8">
-          {['About', 'Services', 'Speaking & Workshops', 'Coaching', 'Resources', 'Contact'].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-')}`}
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.href}
               className={cn(
                 'menu-link',
                 isScrolled ? 'text-charcoal' : 'text-white'
               )}
             >
-              {item}
-            </a>
+              {item.name}
+            </Link>
           ))}
         </nav>
 
@@ -92,15 +102,15 @@ const Navigation = () => {
           </div>
 
           <div className="flex flex-col space-y-6">
-            {['About', 'Services', 'Speaking & Workshops', 'Coaching', 'Resources', 'Contact'].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-')}`}
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
                 onClick={handleLinkClick}
                 className="text-xl font-bold text-charcoal hover:text-teal transition-colors"
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </div>
 
@@ -110,7 +120,7 @@ const Navigation = () => {
               <a href="#" className="social-icon" aria-label="Instagram">
                 <Instagram size={24} />
               </a>
-              <a href="#" className="social-icon" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/emmanuel-nandokha-458a809/?originalSubdomain=ke" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
                 <Linkedin size={24} />
               </a>
               <a href="#" className="social-icon" aria-label="Twitter">

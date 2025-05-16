@@ -18,7 +18,7 @@ const About = () => {
           <div className="lg:w-1/3">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="/lovable-uploads/8d55b351-0fb0-48ae-8955-7f93a11f569d.png"
                 alt="Emmanuel Nandokha"
                 className="rounded-lg shadow-lg w-full h-auto"
               />

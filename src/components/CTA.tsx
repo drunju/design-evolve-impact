@@ -23,7 +23,7 @@ const CTA = () => {
             <a href="#contact" className="btn-primary">
               Book a Consultation
             </a>
-            <a href="#" className="btn-secondary">
+            <a href="https://www.linkedin.com/in/emmanuel-nandokha-458a809/?originalSubdomain=ke" target="_blank" rel="noopener noreferrer" className="btn-secondary">
               Download Profile
             </a>
           </div>

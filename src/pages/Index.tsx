@@ -13,6 +13,17 @@ const Index = () => {
   useEffect(() => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
+    
+    // Handle anchor links from other pages
+    const { hash } = window.location;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
   }, []);
 
   return (

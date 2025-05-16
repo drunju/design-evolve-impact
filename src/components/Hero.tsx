@@ -42,7 +42,7 @@ const Hero = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-colleagues-giving-a-presentation-in-an-office-meeting-42843-large.mp4" type="video/mp4" />
+        <source src="https://cdn.pixabay.com/vimeo/328726787/hand-25019.mp4?width=1280&hash=d984cc0da94cca302c862e6f60e2fb2e609c217d" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

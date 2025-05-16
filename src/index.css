@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
 
 @tailwind base;
@@ -103,6 +104,35 @@
   .testimonial-card {
     @apply bg-white p-6 rounded-lg shadow-md border-l-4 border-teal;
   }
+  
+  /* Blog post content styles */
+  .prose h2 {
+    @apply text-3xl font-bold mt-8 mb-4;
+  }
+  
+  .prose h3 {
+    @apply text-2xl font-semibold mt-6 mb-3 text-charcoal;
+  }
+  
+  .prose p {
+    @apply mb-4 leading-relaxed text-lg;
+  }
+  
+  .prose a {
+    @apply text-teal hover:text-teal-dark underline;
+  }
+  
+  .prose ul, .prose ol {
+    @apply mb-4 ml-6;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-teal pl-4 italic my-6;
+  }
 }
 
 @layer utilities {
@@ -110,3 +140,4 @@
     text-wrap: balance;
   }
 }
+

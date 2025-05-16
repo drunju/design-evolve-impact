@@ -63,28 +63,28 @@ const Testimonial: React.FC<TestimonialProps> = ({ quote, author, position, comp
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Emmanuel's coaching transformed how our leadership team approaches innovation. His human-centered methodologies helped us create solutions that genuinely resonate with our customers.",
-      author: "Sarah Mwangi",
-      position: "Chief Innovation Officer",
-      company: "Safaricom"
-    },
-    {
-      quote: "The HCD workshops Emmanuel facilitated for our team unlocked creativity we didn't know we had. We've implemented three major product improvements as a direct result.",
-      author: "James Odhiambo",
-      position: "Product Director",
-      company: "M-KOPA Solar"
-    },
-    {
-      quote: "Emmanuel has a remarkable ability to make complex design concepts accessible and practical. Our education initiative reached 40% more students after applying his methodologies.",
-      author: "Elizabeth Njeri",
+      quote: "I have had the pleasure to work with Emmanuel while he was working with Jacaranda Health as their Design lead. Emmanuel is an amazing Human-Centered Design specialist who always works with the future users in mind. He is excellent in facilitating design thinking workshops and has successfully facilitated over 10 workshops we did with the Ministry of Health and USAID.",
+      author: "Sathy Rajasekharan",
       position: "Executive Director",
-      company: "Kenya Education Fund"
+      company: "Jacaranda Health"
     },
     {
-      quote: "Working with Emmanuel helped us navigate a challenging organizational transformation. His coaching provided clarity and confidence when we needed it most.",
-      author: "Robert Maina",
-      position: "CEO",
-      company: "East African Development Bank"
+      quote: "Emmanuel is a gifted group facilitator, great collaborator, inspirational coach, designer, and a good friend. Working with him has been instrumental in bringing out the best in numerous teams of colleagues over the years. He has developed a powerful capacity for relating with diverse people and varied groups with genuine curiosity and care.",
+      author: "Kim Wilson",
+      position: "Professor",
+      company: "The Fletcher School at Tufts University"
+    },
+    {
+      quote: "Emmanuel is a deep practitioner of human-centered design. He has truly mastered the integral skills needed to find solutions to wicked problems. He brings creativity, integrity, deep thought, and above all a spirit of play, which makes him a joy to work with.",
+      author: "Ben Lyon",
+      position: "Co-founder",
+      company: "Hover"
+    },
+    {
+      quote: "Emmanuel is a talented, innovative and creative team leader. He is a pro at Design Thinking, coaching and facilitation. I worked with Emmanuel on our Equity Bank Financial Inclusion Innovation Lab and he was invaluable in helping us come up with great ideas and business models for the organization.",
+      author: "Moses Kebba",
+      position: "Marketing Director",
+      company: "Vivo Energy Uganda"
     }
   ];
 
