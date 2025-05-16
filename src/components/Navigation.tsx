@@ -38,8 +38,6 @@ const Navigation = () => {
   const navItems = [
     { name: 'About', href: '/#about' },
     { name: 'Services', href: '/#services' },
-    { name: 'Speaking & Workshops', href: '/#speaking-workshops' },
-    { name: 'Coaching', href: '/#coaching' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/#contact' }
   ];

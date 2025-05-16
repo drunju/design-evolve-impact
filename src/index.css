@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
 
 @tailwind base;
@@ -93,7 +92,7 @@
     @apply bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg;
   }
 
-  .video-container {
+  .hero-container {
     @apply relative w-full h-screen overflow-hidden;
   }
 
@@ -140,4 +139,3 @@
     text-wrap: balance;
   }
 }
-

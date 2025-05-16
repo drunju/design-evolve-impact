@@ -33,18 +33,18 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="video-container">
-      {/* Video Background */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+    <section className="hero-container">
+      {/* Image Background */}
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-center"
+        style={{ 
+          backgroundImage: 'url("https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6?q=80&w=1932&auto=format&fit=crop")',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
       >
-        <source src="https://cdn.pixabay.com/vimeo/328726787/hand-25019.mp4?width=1280&hash=d984cc0da94cca302c862e6f60e2fb2e609c217d" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+      </div>
 
       {/* Overlay with Text Content */}
       <div className="video-overlay">
